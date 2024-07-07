@@ -9,7 +9,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-
+        
         RaycastHit hit;
 
         Vector3 forwardDirection = transform.forward;
@@ -21,6 +21,7 @@ public class PlayerInteraction : MonoBehaviour
             if (hit.collider.TryGetComponent<Chest>(out chest))
             {
                 Debug.Log("chest bulundu");
+                uiPanel = chest.GetComponent<ChestInventoryUIController>().chestPanelPrefab;
                 uiPanel.SetActive(true);
             }
             else
