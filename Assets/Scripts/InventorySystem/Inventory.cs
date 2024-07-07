@@ -5,8 +5,8 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public SCInventory playerInventory;
-    InventoryUIController inventoryUI;
-
+    [SerializeField] InventoryUIController inventoryUI;
+    
     private void Start()
     {
         inventoryUI = gameObject.GetComponent<InventoryUIController>();

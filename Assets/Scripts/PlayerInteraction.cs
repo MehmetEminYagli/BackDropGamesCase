@@ -21,18 +21,16 @@ public class PlayerInteraction : MonoBehaviour
             if (hit.collider.TryGetComponent<Chest>(out chest))
             {
                 Debug.Log("chest bulundu");
-                //uiPanel.SetActive(true);
+                uiPanel.SetActive(true);
             }
             else
             {
-                Debug.Log("chest bulunamadı");
-                //uiPanel.SetActive(false);
+                uiPanel.SetActive(false);
             }
         }
         else
         {
-            
-            //uiPanel.SetActive(false);
+            uiPanel.SetActive(false);
         }
     }
 }

@@ -8,18 +8,20 @@ public class InventoryUIController : MonoBehaviour
 
     public List<SlotUI> uiList = new List<SlotUI>();
 
-    Inventory userInventory;
+    [SerializeField] private Inventory userInventory;
 
     private void Start()
     {
-        userInventory = gameObject.GetComponent<Inventory>();
+        userInventory = GetComponent<Inventory>();
        
     }
 
     public void UpdateUI()
     {
+        
         for (int i = 0; i < uiList.Count; i++)
-        {                   //playerinventory scriptable nesne olan SCInventory den bilgileri çektigimiz atama.
+        {
+            //playerinventory scriptable nesne olan SCInventory den bilgileri çektigimiz atama.
             if (userInventory.playerInventory.inventorySlot[i].itemCount > 0) //eğer envanterde nesne var ise yapılacaklar
             {
                 uiList[i].itemImage.sprite = userInventory.playerInventory.inventorySlot[i].item.itemIcon;
