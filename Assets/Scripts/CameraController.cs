@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour
     public Transform character;
 
     public float transitionSpeed = 5.0f;
-    public Vector3 fpsOffset = new Vector3(0f, 1.5f, 0f); 
+    public Vector3 fpsOffset = new Vector3(0f, 1.5f, 0f);
     public Vector3 tpsOffset = new Vector3(-6f, 6f, -6f);
     private Quaternion tpsRotation = Quaternion.Euler(45f, 45f, 0f);
 
@@ -24,10 +24,10 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            SwitchCameras();
-        }
+        //if (Input.GetKeyDown(KeyCode.C))
+        //{
+        //    SwitchCameras();
+        //}
 
         if (isFpsView)
         {
@@ -42,7 +42,7 @@ public class CameraController : MonoBehaviour
         }
     }
 
-    void SwitchCameras()
+    public void SwitchCameras()
     {
         fpsCamera.enabled = !fpsCamera.enabled;
         tpsCamera.enabled = !tpsCamera.enabled;
