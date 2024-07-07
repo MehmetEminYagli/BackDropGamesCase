@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: PirateSword
   canStackable: 0
-  itemClone: {fileID: 21300000, guid: 8dc7032d37dcbd242ad03a111a100273, type: 3}
+  itemIcon: {fileID: 21300000, guid: 8dc7032d37dcbd242ad03a111a100273, type: 3}
   itemPrefab: {fileID: 7121958293180316826, guid: 040098e5fe6694a4e912e781871ab18f, type: 3}

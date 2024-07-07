@@ -12,4 +12,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf849000d8e39f148b1c34b756724c21, type: 3}
   m_Name: Inventory
   m_EditorClassIdentifier: 
-  inventorySlot: []
+  inventorySlot:
+  - isFull: 1
+    itemCount: 1
+    item: {fileID: 11400000, guid: f9b4b5f83ef15ac478318f61c30645aa, type: 2}
+  - isFull: 1
+    itemCount: 1
+    item: {fileID: 11400000, guid: f9b4b5f83ef15ac478318f61c30645aa, type: 2}
+  - isFull: 0
+    itemCount: 2
+    item: {fileID: 11400000, guid: 0d0c9fc990ad7284b9dc86bb9c90931f, type: 2}
+  - isFull: 1
+    itemCount: 1
+    item: {fileID: 11400000, guid: f9b4b5f83ef15ac478318f61c30645aa, type: 2}
+  - isFull: 1
+    itemCount: 1
+    item: {fileID: 11400000, guid: 5f34aad5261ab59488c4074c23affddf, type: 2}
+  - isFull: 1
+    itemCount: 1
+    item: {fileID: 11400000, guid: 5f34aad5261ab59488c4074c23affddf, type: 2}
+  - isFull: 1
+    itemCount: 1
+    item: {fileID: 11400000, guid: 5f34aad5261ab59488c4074c23affddf, type: 2}
+  - isFull: 1
+    itemCount: 1
+    item: {fileID: 11400000, guid: 5f34aad5261ab59488c4074c23affddf, type: 2}
+  - isFull: 0
+    itemCount: 0
+    item: {fileID: 0}
+  - isFull: 0
+    itemCount: 0
+    item: {fileID: 0}
+  - isFull: 0
+    itemCount: 0
+    item: {fileID: 0}
+  - isFull: 0
+    itemCount: 0
+    item: {fileID: 0}
+  - isFull: 0
+    itemCount: 0
+    item: {fileID: 0}
+  - isFull: 0
+    itemCount: 0
+    item: {fileID: 0}
+  - isFull: 0
+    itemCount: 0
+    item: {fileID: 0}

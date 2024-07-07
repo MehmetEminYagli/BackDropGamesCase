@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: BottleLarge
   canStackable: 1
-  itemClone: {fileID: 21300000, guid: c235a168b4fed154b80185269c641d16, type: 3}
+  itemIcon: {fileID: 21300000, guid: c235a168b4fed154b80185269c641d16, type: 3}
   itemPrefab: {fileID: 7419721984171220887, guid: 8e741a19d9b6e014b83cbf888f90e8fc, type: 3}

@@ -6,6 +6,7 @@ using UnityEngine;
 public class SCInventory : ScriptableObject
 {
     public List<Slot> inventorySlot = new List<Slot>();
+
     int stackLimit = 4; // stacklanabilir nesne en fazla kaç adet stacklenebilir limiti
 
     //karakter yerden item alma methodu

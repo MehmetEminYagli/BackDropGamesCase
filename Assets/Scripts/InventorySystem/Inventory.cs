@@ -5,9 +5,15 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public SCInventory playerInventory;
+    InventoryUIController inventoryUI;
+
+    private void Start()
+    {
+        inventoryUI = gameObject.GetComponent<InventoryUIController>();
+        inventoryUI.UpdateUI();
+    }
 
     //yerden alma işlemi
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("item"))
@@ -15,11 +21,10 @@ public class Inventory : MonoBehaviour
             if (playerInventory.AddItem(other.gameObject.GetComponent<Item>().item))
             {
                 Destroy(other.gameObject);
+                //nesneyi aldigimde ui tarafinde de güncelleme islemi yapilsin
+                inventoryUI.UpdateUI();
             }
-            else
-            {
-                Debug.Log("envanter dolu nesne eklenmedi");
-            }
+           
         }
     }
 }

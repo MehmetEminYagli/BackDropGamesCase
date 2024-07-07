@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Shovel
   canStackable: 0
-  itemClone: {fileID: 21300000, guid: d61df672b90be244e836c7648534f4c3, type: 3}
+  itemIcon: {fileID: 21300000, guid: d61df672b90be244e836c7648534f4c3, type: 3}
   itemPrefab: {fileID: 5733957874986976783, guid: 9f1f617c750e8144ab21e7b228dc73c8, type: 3}

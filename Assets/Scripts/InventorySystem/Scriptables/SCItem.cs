@@ -6,7 +6,7 @@ public class SCItem : ScriptableObject
 {
     public string itemName;
     public bool canStackable;
-    public Sprite itemClone;
+    public Sprite itemIcon;
     public GameObject itemPrefab;
   
 }
